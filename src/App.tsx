@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Lesson1 from "./lesson1/Lesson1";
+import Lesson2 from "./lesson2/Lesson2";
+import Lesson3 from "./lesson3/Lesson3";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App: React.FC = () => {
+  return(
+      <div>
+       <Lesson1/>
+       <Lesson2 />
+       <Lesson3/>
+      </div>
+  )
 }
 
 export default App;
+
